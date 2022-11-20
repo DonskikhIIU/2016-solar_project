@@ -50,7 +50,7 @@ def parse_star_parameters(line, star):
 
     star.R = int(line.split()[1])
     star.color = line.split()[2]
-    star.m = int(line.split()[1])
+    star.m = int(line.split()[3])
     star.x = int(line.split()[4])
     star.y = int(line.split()[5])
     star.Vx = int(line.split()[6])
