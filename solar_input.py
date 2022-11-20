@@ -75,7 +75,7 @@ def parse_planet_parameters(line, planet):
 
     planet.R = int(line.split()[1])
     planet.color = line.split()[2]
-    planet.m = int(line.split()[1])
+    planet.m = int(line.split()[3])
     planet.x = int(line.split()[4])
     planet.y = int(line.split()[5])
     planet.Vx = int(line.split()[6])
