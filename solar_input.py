@@ -100,6 +100,13 @@ def write_space_objects_data_to_file(output_filename, space_objects):
 
 # FIXME: хорошо бы ещё сделать функцию, сохранающую статистику в заданный файл...
 
+def saving_statistics(space_objects, current_time):
+    with open('stats.txt', 'a') as file_with_stats:
+        obj = space_objects[1]
+        data = list(map(str, [(obj.x**2 + obj.y**2)**0.5, (obj.Vx**2 + obj.Vy**2)**0.5, current_time]))
+        file_with_stats.writelines(' '.join(data) + '\n')
+
+
 if __name__ == "__main__":
     print("This module is not for direct call!")
 
